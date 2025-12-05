@@ -1,25 +1,18 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="id">
 <head>
     <meta charset="UTF-8">
-    <title>Drag & Drop Cooking Game</title>
+    <title>Find the Difference: Tulip Restaurant</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <h1>Cooking Game: Masukkan semua bahan ke dalam panci!</h1>
-    <div class="game-container">
-        <div class="ingredients-container" id="ingredients">
-            <!-- Bahan ditampilkan sebagai kotak berwarna -->
-        </div>
-        <div class="pot-container">
-            <div id="pot" class="pot">
-                <span>Panci</span>
-            </div>
-        </div>
+    <h1>Find the Difference - Restoran Tulip</h1>
+    <p>Pada gambar kanan terdapat perbedaan! Klik perbedaannya!</p>
+    <div id="game-container">
+        <canvas id="canvas-left" width="320" height="320"></canvas>
+        <canvas id="canvas-right" width="320" height="320"></canvas>
     </div>
-    <div id="message"></div>
-    <button id="restart" style="display:none;">Main Lagi</button>
+    <p id="info"></p>
     <script src="script.js"></script>
 </body>
 </html>
-
