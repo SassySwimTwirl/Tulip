@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <title>Game Memasak Tulip - Drag & Drop Bahan</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Restoran Tulip: Bantu Tulip Memasak!</h1>
+    <div class="story">
+        <div class="tulip-avatar">Tulip</div>
+        <div class="dialog">
+           Hai! Aku Tulip, koki di restoran sederhana ini.<br>
+           Bantu aku memasukkan semua bahan ke dalam panci untuk pelanggan!
+        </div>
+    </div>
+    <div class="game-area">
+        <div class="ingredients-side">
+            <div class="title">Daftar Bahan</div>
+            <div id="ingredients"></div>
+        </div>
+        <div class="kitchen">
+            <div class="restaurant-name">🍽️ RESTORAN</div>
+            <div id="pot" class="pot">
+                <span>Panci Restoran</span>
+            </div>
+        </div>
+    </div>
+    <div id="message"></div>
+    <button id="restart" style="display:none;">Main Lagi</button>
+    <script src="script.js"></script>
+</body>
+</html>
