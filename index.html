@@ -1,45 +1,25 @@
 <!DOCTYPE html>
-<html lang="id">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Game Memasak Tulip - Pesan & Menu Restoran</title>
+    <title>Drag & Drop Cooking Game</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <h1>Restoran Tulip: Kamu & Tulip Melayani Pelanggan!</h1>
-    <div class="game-top">
-        <div class="customer-section">
-            <div class="customer-avatar"></div>
-            <div class="customer-dialog">
-                <span id="customerOrderText">Saya mau makanan...</span>
+    <h1>Cooking Game: Masukkan semua bahan ke dalam panci!</h1>
+    <div class="game-container">
+        <div class="ingredients-container" id="ingredients">
+            <!-- Bahan ditampilkan sebagai kotak berwarna -->
+        </div>
+        <div class="pot-container">
+            <div id="pot" class="pot">
+                <span>Panci</span>
             </div>
         </div>
-        <div class="tulip-info">
-            <div class="tulip-avatar">Tulip</div>
-            <div class="tulip-name">Koki: Tulip</div>
-        </div>
     </div>
-    <div class="main-area">
-        <div class="side-area menu-list">
-            <div class="title">Menu Restoran</div>
-            <div id="menuList"></div>
-        </div>
-        <div class="middle-area">
-            <div class="kitchen">
-                <div class="restaurant-name">🍽️</div>
-                <div id="pot" class="pot">
-                    <span>Panci Restoran</span>
-                </div>
-            </div>
-            <div id="message"></div>
-            <div class="dish-area" id="dishArea"></div>
-            <button id="restart" style="display:none;">Pelanggan Berikutnya</button>
-        </div>
-        <div class="side-area ingredients-side">
-            <div class="title">Daftar Bahan</div>
-            <div id="ingredients"></div>
-        </div>
-    </div>
+    <div id="message"></div>
+    <button id="restart" style="display:none;">Main Lagi</button>
     <script src="script.js"></script>
 </body>
 </html>
+
